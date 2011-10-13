@@ -11,7 +11,7 @@ void count(const char *s)
 	int let = 0, dig = 0, other = 0, i = 0;
 	while ((c = s[i++]) != '\0') {
 		if ('A' <= c && 'Z' >= c)
-			let += 2;
+			let += 2; // looks like a bug
 		else if ('a' <= c && 'z' >= c)
 			let += 1;
 		else if ('0' <= c && '9' >= c)
