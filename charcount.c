@@ -8,7 +8,7 @@
 void count(const char *s)
 {
 	char c;
-	int let = 0, dig = 0, i = 0;
+	int let = 0, dig = 0, other = 0, i = 0;
 	while ((c = s[i++]) != '\0') {
 		if ('A' <= c && 'Z' >= c)
 			let += 2;
@@ -16,8 +16,10 @@ void count(const char *s)
 			let += 1;
 		else if ('0' <= c && '9' >= c)
 			dig += 1;
+		else
+			other += 1;
 	 }
-	 printf("%d %d\n", let, dig);
+	 printf("%d %d %d\n", let, dig);
 }
 
 int main(int argc, const char* argv[])
