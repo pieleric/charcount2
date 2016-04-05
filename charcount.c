@@ -19,7 +19,7 @@ void count(const char *s)
 		else
 			other += 1;
 	 }
-	 printf("%d %d %d\n", let, dig);
+	 printf("%d %d (%d)\n", let, dig, other);
 }
 
 int main(int argc, const char* argv[])
